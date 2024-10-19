@@ -1,0 +1,50 @@
+/* Media Query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .card, .description-card {
+        transform: scale(0.9); /* Scale down slightly */
+    }
+}
+
+/* Media Query for screens smaller than 400px */
+@media (max-width: 400px) {
+    .card, .description-card {
+        transform: scale(0.8); /* Scale down more on smaller screens */
+        width: 100%;
+    }
+}
+
+/* Media Query for screens smaller than 300px */
+@media (max-width: 300px) {
+    .card, .description-card {
+        transform: scale(0.75); /* Even smaller scaling for tiny screens */
+        width: 100%;
+        padding: 1em; /* Reduce padding */
+    }
+
+    .name {
+        font-size: 1.2em; /* Scale down the name text */
+    }
+
+    .profile-square {
+        width: 4em; /* Scale down profile square */
+        height: 4em;
+    }
+
+    .inventory {
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid for smaller screens */
+        gap: 0.5em;
+    }
+
+    .item-slot {
+        grid-auto-rows: 4em; /* Scale down the inventory slots */
+    }
+
+    .item-slot.large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .item-slot.medium {
+        grid-column: span 2;
+    }
+}
