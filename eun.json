@@ -1,0 +1,123 @@
+{
+    "name": "Eun-byul Selous",
+    "hp": {
+        "current": 4,
+        "capacity": 6
+    },
+    "profile": [
+        ["Age", "17"],
+        ["Ethnicity", "South Korean"],
+        ["Height", "5'9"],
+        ["Weight", "Average"],
+        ["Personality", "Curious, Intelligent, No moral restraint, A little edgy, Not afraid to fight or argue, Creative (Writer/Artist), Sometimes unpredictable"],
+        ["Background", "LIRP"],
+        [],
+        ["Perk", "Eidetic Memory"],
+        ["Description", "Eun-byul can recall with perfect clarity, as if the memory is right in front of her, something that she saw or heard. It could be a book she read, a game of D&D, or exactly how a person looked. This gives her a permanent +1 to intelligence, but a d20 -1 to speed and agility regardless of buffs when she uses the ability."]
+    ],
+    "inventoryLimiter": 10,
+    "inventoryCapacity": 24,
+    "inventory": {
+        "items": [
+            {
+                "name": "WM-D6C Sony Walkman",
+                "icon": "♬", 
+                "size": 2,
+                "description": "A cassette hidden in her jacket. Attachments include corded headphones on her neck and a handheld microphone in her jacket. 1 C90 Tape (90m) already in the Sony Walkman, and 1 spare with mostly pirated music on it."
+            },
+            {
+                "name": "Journal",
+                "icon": "ᝰ", 
+                "size": 1,
+                "description": "Journal. Discoveries, ideas, and drawings are logged here. 1 small used pencil in her pocket, and 1 sharpened pencil in her ear."
+            },
+            {
+                "name": "Purse",
+                "icon": "⛁", 
+                "size": 2,
+                "description": "A fashionable purse that holds several smaller items.",
+                "isCollection": true,   
+                "collectionItems": [
+                    {
+                        "name": "Lighter",
+                        "size": 1,
+                        "description": "A small silver lighter."
+                    },
+                    {
+                        "name": "Cash",
+                        "size": 1,
+                        "description": "Folded cash, worth about $50."
+                    },
+                    {
+                        "name": "Hairspray",
+                        "size": 1,
+                        "description": "Travel-sized hairspray, can be used as a quick fix."
+                    }
+                ]
+            },
+            {
+                "name": "Hunting Knife",
+                "size": 1,
+                "lost": true,
+                "description": "A simple pocket knife used for cutting ropes/hunting."
+            }
+        ]
+    },
+    "tactics": {
+        "items": [
+            {
+                "name": "Slash Tires",
+                "lost": true,
+                "description": "Eun-byul can slash a car's tires to prevent it from driving. Previous uses include 1 year ago against some poor soul in high school.<br><br>Requires knife"
+            },
+            {
+                "name": "Finger Whistle",
+                "description": "Create a loud 120db finger whistle to attract attention.<br><br>Requires hands"
+            },
+            {
+                "name": "Record Audio",
+                "description": "Requires Sony Walkman, Microphone, C90 Tape 1 or 2. Record a sample of audio and save it to a track."
+            },
+            {
+                "name": "Play Music",
+                "description": "Requires Sony Walkman, Headphones. C90 Tape 2. Listen to your playlist and ignore sounds from your environment."
+            },
+            {
+                "name": "Eye Poke",
+                "lost": true,
+                "description": "Requires Sharp object (Pencil) & 'Balloons' thought which can be acquired by playing 'Pop The Balloons' at the amusement park.<br><br>Throw a sharp object at an undead demons eye."
+            }
+        ]
+    },
+    "discoverys": {
+        "items": [
+            {
+                "name": "Father",
+                "description": "Your father's name is Richard Selous.<br><br>He is a local journalist in Blackwood. He is also an Anglican Christian.<br><br>He used to be an on field journalist for the Vietnam War.<br><br>His ancestor is Frederick Selous."
+            },
+            {
+                "name": "Mercury",
+                "description": "The tremors in your left hand are caused by chronic exposure to mercury. This was verified by a doctors appointment, so you know this is true.<br><br>The only exposure you can think of was the incident where you ate a fish from Onondaga Lake in New York.<br><br>Your father and brother joke that your crazy ideas come from the mercury. This only makes you upset."
+            },
+            {
+                "name": "Mother",
+                "description": "Your mother shares some of the school of thought of Seon Buddhists. Ie Zen Buddhism, a branch of Mahayana Buddhism.<br><br>She is from South Korea."
+            },
+            {
+                "name": "Mike",
+                "description": "Your older brother, Michael Selous, who enlisted in the navy. He sometimes writes to you."
+            },
+            {
+                "name": "Pop the Balloons!",
+                "size": 2,
+                "lost": true,
+                "description": "Thought has not been internalized."
+            },
+            {
+                "name": "Random Loser",
+                "size": 2,
+                "description": "A kid you bullied 5 years ago. You slashed his parents tires for an entire month to see what he'd do to get to school.<br><br>It took him an hour and half to make it to school on average. You used this information to calculate walk times in d&d."
+            }
+        ]
+    }
+}

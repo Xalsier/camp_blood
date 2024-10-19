@@ -1,0 +1,73 @@
+{
+    "name": "Debug Profile",
+    "hp": {
+        "current": 1,
+        "capacity": 6
+    },
+    "profile": [
+        ["Age", ""],
+        ["Ethnicity", ""],
+        ["Height", ""],
+        ["Weight", ""],
+        ["Personality", ""],
+        ["Background", ""]
+    ],
+    "inventoryLimiter": 10,
+    "inventoryCapacity": 24,
+    "inventory": {
+        "items": [
+            {
+                "name": "Example Item",
+                "icon": "",
+                "size": 1,
+                "description": "This is an example of an item in the inventory."
+            },
+            {
+                "name": "Example Collection Item",
+                "icon": "",
+                "size": 2,
+                "description": "This is an example of a collection item that holds smaller objects.",
+                "isCollection": true,
+                "collectionItems": [
+                    {
+                        "name": "Sub-Item 1",
+                        "size": 1,
+                        "description": "A smaller item held in the collection."
+                    },
+                    {
+                        "name": "Sub-Item 2",
+                        "size": 1,
+                        "description": "Another smaller item held in the collection."
+                    }
+                ]
+            }
+        ]
+    },
+    "tactics": {
+        "items": [
+            {
+                "name": "Example Tactic",
+                "description": "This is an example tactic with details of how it works.<br><br>Requires something specific."
+            },
+            {
+                "name": "Another Example Tactic",
+                "lost": true,
+                "description": "This is an example of a lost tactic. It cannot be used by the character.<br><br>This tactic is lost."
+            }
+        ]
+    },
+    "discoverys": {
+        "items": [
+            {
+                "name": "Test Discovery",
+                "description": "This is a test discovery with progress and requirements.",
+                "lost": true,
+                "progress": 50,
+                "req": [
+                    ["example", false],
+                    ["example 2", true]
+                ]
+            }
+        ]
+    }
+}

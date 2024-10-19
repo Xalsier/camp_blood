@@ -45,10 +45,36 @@ function loadData(dataUrl) {
                 event.stopPropagation();
                 let description = item.description || '';
                 if (item.lost) {
-                    description += "<br><br><em>This action, item, or memory cannot be used as it is missing 1 or more requirements.</em>";
+                    description += "<br><br><em>This action, item, or thought cannot be used as it is missing 1 or more requirements.</em>";
+                }
+                let progressBarHtml = '';
+                if (item.progress !== undefined) {
+                    progressBarHtml = `
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill" style="width: ${item.progress}%"></div>
+                            </div>
+                        </div>
+                    `;
+                }
+                let requirementsHtml = '';
+                if (item.req !== undefined && Array.isArray(item.req)) {
+                    requirementsHtml = '<div class="requirements">';
+                    item.req.forEach(function(requirement) {
+                        let [reqName, reqMet] = requirement;
+                        requirementsHtml += `
+                            <div class="requirement">
+                                <span class="requirement-circle ${reqMet ? 'active' : 'inactive'}"></span>
+                                <span class="requirement-name">${reqName}</span>
+                            </div>
+                        `;
+                    });
+                    requirementsHtml += '</div>';
                 }
                 $(config.selectors.descriptionCard).html(`
                     <p><strong>${itemName}</strong></p>
+                    ${progressBarHtml}
+                    ${requirementsHtml}
                     <p>${description}</p>
                 `).show();
             });

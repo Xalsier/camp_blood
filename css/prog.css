@@ -1,0 +1,51 @@
+/* Progress Bar Styles */
+.progress-bar-container {
+    margin: 10px 0;
+}
+
+.progress-bar {
+    background-color: #333; /* Dark background for the progress bar */
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    border: 1px solid #00f6ff; /* Neon blue border */
+}
+
+.progress-bar-fill {
+    background-color: #00f6ff; /* Neon blue fill */
+    height: 100%;
+    width: 0%; /* Width will be set inline via style attribute */
+    transition: width 0.3s ease;
+}
+
+/* Requirements Styles */
+.requirements {
+    margin: 10px 0;
+}
+
+.requirement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.requirement-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #00f6ff; /* Neon blue border */
+}
+
+.requirement-circle.active {
+    background-color: #00f6ff; /* Neon blue */
+}
+
+.requirement-circle.inactive {
+    background-color: #555; /* Gray for inactive */
+}
+
+.requirement-name {
+    color: #e0e0ff; /* Light neon blue text */
+}

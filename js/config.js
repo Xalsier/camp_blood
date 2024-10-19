@@ -1,5 +1,5 @@
-const eunUrl = 'https://raw.githubusercontent.com/Xalsier/blood_Inv/refs/heads/main/eun.json';
-const debugUrl = 'https://raw.githubusercontent.com/Xalsier/blood_Inv/refs/heads/main/debug.json';
+const eunUrl = 'eun.json';
+const debugUrl = 'debug.json';
 let currentDataUrl = eunUrl; // Default to Eun's data
 const config = {
     totalCapacity: 24,
