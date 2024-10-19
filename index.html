@@ -6,18 +6,17 @@
     <title>Inventory System</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/opt.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/ekg.css">
 </head>
 <body>
     <div class="card">
-        <!-- Profile and Info Container -->
         <div class="profile-info-container">
-            <!-- Child 1: Profile Square -->
             <div class="profile-square" id="profile-square">
                 <svg id="ekgSvg" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                     <path id="ekgPath" d="M0 40 L10 40 L20 20 L30 60 L40 40 L50 40 L60 40 L70 30 L80 40 L90 40 L100 10 L110 70 L120 40 L130 40 L140 40 L150 20 L160 60 L170 40 L180 40 L190 40 L200 40" />
                 </svg>
             </div>            
-            <!-- Child 2: Name and HP -->
             <div class="info-container">
                 <div id="name" class="name"></div>
                 <div class="hp-container">
@@ -27,7 +26,6 @@
             </div>
         </div>
     
-        <!-- Navigation Menu -->
         <div class="navigation">
             <span class="nav-item" id="nav-profile">Profile</span>
             <span class="nav-item" id="nav-discoverys">Internalize</span>
@@ -35,30 +33,16 @@
             <span class="nav-item" id="nav-tactics">Tactics</span>
         </div>
     
-        <!-- Inventory Section (Visible by default) -->
-        <div class="inventory">
-            <!-- Items will be added dynamically -->
-        </div>
-
-        <div class="tactics" style="display: none;">
-            <!-- Tactics will be added dynamically -->
-        </div>
-        
-        <div class="discoverys" style="display: none;">
-            <!-- Discoveries will be added dynamically -->
-        </div>
-    
-        <!-- Profile Section (Hidden initially) -->
-        <div class="profile-details" style="display: none;">
-            <!-- Profile details will be populated here -->
-        </div>
+        <div class="inventory"></div>
+        <div class="tactics" style="display: none;"></div>
+        <div class="discoverys" style="display: none;"></div>
+        <div class="profile-details" style="display: none;"></div>
     </div>
     
-    <!-- Description Card -->
     <div id="description-card" class="card description-card" style="display: none;"></div>
     
-    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>    
+    <script src="js/config.js"></script>  
+    <script src="js/script.js"></script>    
 </body>
 </html>

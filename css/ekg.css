@@ -1,0 +1,62 @@
+.profile-square {
+    width: 5em; /* 80px converted to em */
+    height: 5em;
+    border-radius: 10px;
+    border: 1px solid #00f6ff; /* Neon blue border */
+    background-color: #080908;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#ekgSvg {
+    width: 100%;
+    height: 100%;
+}
+
+#ekgPath {
+    fill: none;
+    stroke-width: 2;
+    stroke-dasharray: 200; /* Length of the path to animate */
+    stroke-dashoffset: 0;
+}
+
+/* High health (3+ HP) - Neon green and slow animation (3600s) */
+.ekg-high {
+    stroke: #15ff00; /* Neon green */
+    background-color: #003308; /* Dark reddish-gray background */
+    animation: ekgAnimation 3600s linear infinite;
+}
+
+/* Medium health (2 HP) - Neon yellow and medium animation (1800s) */
+.ekg-medium {
+    stroke: #ffff00; /* Neon yellow */
+    background-color: #333100; /* Dark reddish-gray background */
+    animation: ekgAnimation 1800s linear infinite;
+}
+
+/* Low health (1 HP) - Neon red and fast animation (900s) */
+.ekg-low {
+    stroke: #ff0000; /* Neon red */
+    background-color: #330000; /* Dark reddish-gray background */
+    animation: ekgAnimation 900s linear infinite;
+}
+
+/* Critical health (0 HP) - Neon red stroke with dark grayish red background */
+.ekg-critical {
+    stroke: #ff0000; /* Neon red */
+    background-color: #330000; /* Dark reddish-gray background */
+    animation: ekgAnimation 450s linear infinite;
+}
+
+/* EKG Animation Keyframes (common for all) */
+@keyframes ekgAnimation {
+    0% {
+        stroke-dashoffset: 360000; /* Path starts out of view */
+    }
+    100% {
+        stroke-dashoffset: 0; /* Path completes and restarts */
+    }
+}
