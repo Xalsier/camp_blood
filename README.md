@@ -7,3 +7,7 @@
 
 + Mobile Optimization
 + Progress Bars for Internalized Thoughts
+
+## Connected Repository
+
+https://github.com/Xalsier/blood_Inv
