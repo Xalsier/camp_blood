@@ -139,16 +139,46 @@ function loadData(dataUrl) {
             $(config.selectors.sections.profile).html(profileHtml);
         }
 
+        function populateTimelineSection(timelineData) {
+            let $timeline = $(config.selectors.sections.timeline);
+            $timeline.empty(); // Clear existing content
+        
+            // Reverse the array to show the latest events first
+            let reversedTimeline = timelineData.slice().reverse();
+        
+            $.each(reversedTimeline, function(_, entry) {
+                let year = entry.year;
+                let className = entry.class;
+                let description = entry.description;
+        
+                let $entry = $('<div class="timeline-entry"></div>');
+        
+                let $circle = $('<div class="timeline-circle"></div>').addClass(className);
+                let $year = $('<div class="timeline-year"></div>').text(`${year}`);
+                let $description = $('<div class="timeline-description"></div>').text(description);
+        
+                // Append year, circle, and description in one line
+                $entry.append($year).append($circle).append($description);
+        
+                $timeline.append($entry);
+            });
+        }
+        
+        
+        
+
         $.each(config.selectors.navItems, function(section) {
             $(config.selectors.navItems[section]).on('click', function() {
                 if (section === 'profile') {
                     populateProfileSection(data.profile);
                 }
+                if (section === 'timeline') {
+                    populateTimelineSection(data.timeline);
+                }
                 showSection(section);
             });
         });
         showSection(config.defaultSection);
-
         // Close button handler
         $('#description-close').on('click', function(event) {
             event.stopPropagation();

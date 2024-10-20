@@ -11,8 +11,5 @@
 
 + Progress Bar
 + Requirements
-
-## Connected Repository
-
-https://github.com/Xalsier/blood_Inv
-
++ Added Timeline and event colors.
++ Pushed item descriptions closer to top view.

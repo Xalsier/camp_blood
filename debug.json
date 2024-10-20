@@ -69,5 +69,12 @@
                 ]
             }
         ]
-    }
+    },
+    "timeline": [
+        ["Found object", "ItemFound"],
+        ["Lost object", "ItemLost"],
+        ["Internalized thought", "Thought"],
+        ["Something happened", "Event"],
+        ["Health increased by 1", "Health"]
+    ]
 }

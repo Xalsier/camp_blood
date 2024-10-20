@@ -1,0 +1,51 @@
+.timeline {
+    margin-top: 1em;
+}
+
+.timeline-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.timeline-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.timeline-year {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-right: 10px; /* Add space between year and description */
+    color: #e0e0ff;
+}
+
+.timeline-description {
+    flex-grow: 1;
+    color: #e0e0ff; /* Light neon blue text */
+}
+
+/* Circle colors */
+.timeline-circle.ItemFound {
+    background-color: #FDFD96; /* Pastel Yellow */
+}
+
+.timeline-circle.ItemLost {
+    background-color: #000000; /* Black */
+}
+
+.timeline-circle.Thought {
+    background-color: #AEC6CF; /* Pastel Blue */
+}
+
+.timeline-circle.Event {
+    background-color: #B39EB5; /* Pastel Purple */
+}
+
+.timeline-circle.Health {
+    background-color: #77DD77; /* Pastel Green */
+}

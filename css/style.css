@@ -85,6 +85,7 @@ body {
 
 .navigation {
     display: flex;
+    overflow-x: scroll;
     margin-bottom: 0.625em; /* 10px */
     border-bottom: 1px solid #00f6ff; /* Neon blue border */
 }
@@ -195,8 +196,6 @@ body {
 
 
 .profile-details {
-    background-color: rgba(0, 247, 255, 0.195); /* Neon background for occupied slots */
-    padding: 1em;
     border-radius: 10px;
     color: #e0e0ff;
     margin-top: 1em;

@@ -13,8 +13,7 @@ const config = {
         emptySlot: 0.5,
         lostItem: 0.4,
     },
-    sectionNames: ['inventory', 'profile', 'tactics', 'discoverys'],
-    selectors: {
+    sectionNames: ['inventory', 'profile', 'tactics', 'discoverys', 'timeline'],    selectors: {
         descriptionCard: '#description-card',
         name: '#name',
         hp: '#hp',
@@ -25,12 +24,14 @@ const config = {
             profile: '.profile-details',
             tactics: '.tactics',
             discoverys: '.discoverys',
+            timeline: '.timeline', // Added timeline section
         },
         navItems: {
             inventory: '#nav-inventory',
             profile: '#nav-profile',
             tactics: '#nav-tactics',
             discoverys: '#nav-discoverys',
+            timeline: '#nav-timeline', // Added timeline nav item
         }
     },
     defaultSection: 'inventory',
