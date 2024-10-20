@@ -19,8 +19,7 @@
         {
             "section": "Early Life",
             "events": [
-                {"year": "1971", "class": "Health", "description": "+5 HP, Eun-byul was born."},
-                {"year": "1976", "class": "Event", "description": "Eun started playing Dungeons & Dragons, a year after it came out."}
+                {"year": "1971", "class": "Health", "description": "+5 HP, Eun-byul was born."}
             ]
         },
         {
@@ -28,11 +27,12 @@
             "events": [
                 {"year": "1978", "class": "ItemFound", "description": "Eun acquired a Hunting Knife."},
                 {"year": "1978", "class": "Health", "description": "-1 HP, Eun-byul ate a fish that was highly concentrated with Mercury."},
+                {"year": "1979", "class": "Event", "description": "Eun started playing Dungeons & Dragons, a 4 years after it came out."},
                 {"year": "1981", "class": "Health", "description": "Eun-byul's doctor reports that she's had chronic exposure to mercury."}
             ]
         },
         {
-            "section": "Teenage Years",
+            "section": "Middle-High School Years",
             "events": [
                 {"year": "1984", "class": "ItemFound", "description": "Her father gave Eun a Sony Walkman WM-D6C on her birthday."},
                 {"year": "1984", "class": "Event", "description": "Eun bullied a random loser, slashing their tires to prove a point about walk speeds in RPGs."},
