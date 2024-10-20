@@ -170,6 +170,7 @@
             {
                 "name": "Mercury",
                 "progress": 5,
+                "lost": true,
                 "req": [
                     ["Relic Paint Thought", false],
                     ["Bunny Thought", false]
