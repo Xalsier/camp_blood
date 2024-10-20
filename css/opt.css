@@ -14,10 +14,46 @@
 }
 
 /* Media Query for screens smaller than 300px */
-@media (max-width: 300px) {
+@media (max-width: 340px) {
     .card, .description-card {
         transform: scale(0.75); /* Even smaller scaling for tiny screens */
         width: 100%;
+        padding-left: 1em; /* Reduce padding */
+        padding-right: 1em; /* Reduce padding */
+    }
+
+    .name {
+        font-size: 1.2em; /* Scale down the name text */
+    }
+
+    .profile-square {
+        width: 4em; /* Scale down profile square */
+        height: 4em;
+    }
+
+    .inventory {
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid for smaller screens */
+        gap: 0.5em;
+    }
+
+    .item-slot {
+        grid-auto-rows: 4em; /* Scale down the inventory slots */
+    }
+
+    .item-slot.large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .item-slot.medium {
+        grid-column: span 2;
+    }
+}
+
+/* Media Query for screens smaller than 300px */
+@media (max-width: 300px) {
+    .card, .description-card {
+        width: 90%; /* Scale down the card and description card */
         padding: 1em; /* Reduce padding */
     }
 

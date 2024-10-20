@@ -2,7 +2,6 @@
     width: 5em; /* 80px converted to em */
     height: 5em;
     border-radius: 10px;
-    border: 1px solid #00f6ff; /* Neon blue border */
     background-color: #080908;
     display: flex;
     justify-content: center;

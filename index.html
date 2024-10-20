@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Existing head content -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory System</title>
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/scroll.css">
     <link rel="stylesheet" href="css/ekg.css">
     <link rel="stylesheet" href="css/prog.css">
+    <link rel="stylesheet" href="css/updates.css">
 </head>
 <body>
     <div class="card">
@@ -33,13 +35,24 @@
             <span class="nav-item active" id="nav-inventory">Inventory</span>
             <span class="nav-item" id="nav-tactics">Tactics</span>
         </div>
+
+        <!-- Description card moved inside the main card -->
+        <div id="description-card" class="description-card" style="display: none;">
+            <div class="description-header">
+                <span id="description-title"></span>
+                <button id="description-close" class="close-button">Close</button>
+            </div>
+            <div id="description-content"></div>
+        </div>
     
+        <!-- Inventory and other sections -->
         <div class="inventory"></div>
         <div class="tactics" style="display: none;"></div>
         <div class="discoverys" style="display: none;"></div>
         <div class="profile-details" style="display: none;"></div>
     </div>
-    <div id="description-card" class="card description-card" style="display: none;"></div>
+
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/config.js"></script>  
     <script src="js/script.js"></script>    

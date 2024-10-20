@@ -41,7 +41,7 @@
 }
 
 .requirement-circle.inactive {
-    background-color: #555; /* Gray for inactive */
+    background-color: rgba(63, 46, 72, 0.612);
 }
 
 .requirement-name {

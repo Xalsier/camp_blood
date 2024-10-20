@@ -1,0 +1,70 @@
+/* Add position: relative to .card to position description card absolutely within it */
+.card {
+    position: relative;
+    /* ... existing styles ... */
+    background-color: #1a0026;
+    padding: 1.25em;
+    margin-top: 1.25em;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Style for the description card */
+.description-card {
+    position: absolute;
+    top: 150px; /* Adjust as needed to place below the navigation */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #1a0026c1;
+    border-radius: 10px;
+    color: #e0e0ff;
+    z-index: 1; /* Ensures it appears above the inventory slots */
+    padding: 1em;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Description header styles */
+.description-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+#description-title {
+    font-size: 1.125em; /* 18px */
+    color: #00f6ff; /* Neon blue */
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: #00f6ff;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.close-button:hover {
+    color: #00d4ff; /* Brighter neon blue on hover */
+}
+
+/* Adjust the inventory and other sections to accommodate the absolute positioning */
+.inventory, .tactics, .discoverys, .profile-details {
+    margin-top: 0.625em;
+    position: relative;
+    z-index: 0; /* Ensure these are beneath the description card */
+}
+
+/* Prevent the description card from being hidden by overflow */
+.card {
+    overflow: visible;
+}
