@@ -16,3 +16,4 @@
 + Added Timeline sections.
 + Added Geometry Map Builder
 + Added labels for Map.
++ Hover on place

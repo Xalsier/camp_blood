@@ -9,6 +9,11 @@ let startY = 0;
 let offsetX = 0;
 let offsetY = 0;
 
+// Variables for hover preview
+let mouseX = 0;
+let mouseY = 0;
+let showPreview = false;
+
 const canvas = document.getElementById('geometryCanvas');
 const ctx = canvas.getContext('2d');
 
@@ -28,6 +33,34 @@ function drawAllShapes(ctx) {
     });
 
     ctx.restore();
+
+    // Draw hover preview
+    if (showPreview && currentShape) {
+        ctx.save();
+        ctx.translate(offsetX, offsetY);
+        ctx.globalAlpha = 0.5; // Low opacity for preview
+        ctx.strokeStyle = 'white';
+        ctx.lineWidth = 1;
+
+        if (currentShape === 'square' || currentShape === 'line') {
+            // Snap to grid
+            let x = Math.floor(mouseX / gridSize) * gridSize;
+            let y = Math.floor(mouseY / gridSize) * gridSize;
+            const size = gridSize;
+
+            if (currentShape === 'square') {
+                drawSquarePreview(ctx, x, y, size);
+            } else if (currentShape === 'line') {
+                drawLinePreview(ctx, x, y, size, currentLineType);
+            }
+        } else if (currentShape === 'circle') {
+            // Circles are not snapped to grid
+            const size = gridSize / 2;
+            drawCirclePreview(ctx, mouseX, mouseY, size);
+        }
+
+        ctx.restore();
+    }
 }
 
 function drawOptimizedSquare(ctx, x, y, size) {
@@ -107,7 +140,6 @@ function drawCircle(ctx, x, y, size, label) {
         ctx.fillText(label, x, y - size / 2 - labelOffset);
     }
 }
-
 
 function isCircleNearby(x, y, radius) {
     return userActions.some(action => {
@@ -235,18 +267,58 @@ function populateGeometrySection() {
             offsetX = event.clientX - startX;
             offsetY = event.clientY - startY;
             drawAllShapes(ctx);
+        } else {
+            if (currentShape) {
+                const rect = canvas.getBoundingClientRect();
+                mouseX = event.clientX - rect.left - offsetX;
+                mouseY = event.clientY - rect.top - offsetY;
+                showPreview = true;
+                drawAllShapes(ctx);
+            }
         }
     });
 
     canvas.addEventListener('mouseup', function() {
         isPanning = false;
         canvas.style.cursor = 'grab';
+        showPreview = false;
+        drawAllShapes(ctx);
     });
 
     canvas.addEventListener('mouseleave', function() {
         isPanning = false;
         canvas.style.cursor = 'grab';
+        showPreview = false;
+        drawAllShapes(ctx);
     });
+}
+
+function drawSquarePreview(ctx, x, y, size) {
+    ctx.beginPath();
+    ctx.rect(x, y, size, size);
+    ctx.stroke();
+    ctx.closePath();
+}
+
+function drawLinePreview(ctx, x, y, size, lineType) {
+    ctx.beginPath();
+    if (lineType === 'horizontal') {
+        ctx.moveTo(x, y);
+        ctx.lineTo(x + size, y);
+    } else if (lineType === 'vertical') {
+        ctx.moveTo(x, y);
+        ctx.lineTo(x, y + size);
+    }
+    ctx.stroke();
+    ctx.closePath();
+}
+
+function drawCirclePreview(ctx, x, y, size) {
+    ctx.beginPath();
+    ctx.arc(x, y, size / 2, 0, Math.PI * 2, false);
+    ctx.fillStyle = '#00ff00';
+    ctx.fill();
+    ctx.closePath();
 }
 
 function initializeGeometry() {
