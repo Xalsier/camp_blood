@@ -143,24 +143,39 @@ function loadData(dataUrl) {
             let $timeline = $(config.selectors.sections.timeline);
             $timeline.empty(); // Clear existing content
         
-            // Reverse the array to show the latest events first
-            let reversedTimeline = timelineData.slice().reverse();
+            // Reverse the sections to show the most recent first
+            let reversedTimelineData = timelineData.slice().reverse();
         
-            $.each(reversedTimeline, function(_, entry) {
-                let year = entry.year;
-                let className = entry.class;
-                let description = entry.description;
+            // Loop through reversed sections
+            $.each(reversedTimelineData, function(_, sectionData) {
+                // Create a section header
+                let $sectionHeader = $('<div class="timeline-section"></div>').text(sectionData.section);
+                $timeline.append($sectionHeader);
         
-                let $entry = $('<div class="timeline-entry"></div>');
+                // Add a neon blue divider (hr)
+                let $divider = $('<hr class="timeline-divider">');
+                $timeline.append($divider);
         
-                let $circle = $('<div class="timeline-circle"></div>').addClass(className);
-                let $year = $('<div class="timeline-year"></div>').text(`${year}`);
-                let $description = $('<div class="timeline-description"></div>').text(description);
+                // Reverse events within each section
+                let reversedEvents = sectionData.events.slice().reverse();
         
-                // Append year, circle, and description in one line
-                $entry.append($year).append($circle).append($description);
+                // Loop through reversed events in each section
+                $.each(reversedEvents, function(_, entry) {
+                    let year = entry.year;
+                    let className = entry.class;
+                    let description = entry.description;
         
-                $timeline.append($entry);
+                    let $entry = $('<div class="timeline-entry"></div>');
+        
+                    let $circle = $('<div class="timeline-circle"></div>').addClass(className);
+                    let $year = $('<div class="timeline-year"></div>').text(`${year}`);
+                    let $description = $('<div class="timeline-description"></div>').text(description);
+        
+                    // Append year, circle, and description in one line
+                    $entry.append($year).append($circle).append($description);
+        
+                    $timeline.append($entry);
+                });
             });
         }
         

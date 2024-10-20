@@ -16,19 +16,39 @@
         ["Description", "Eun-byul can recall with perfect clarity, as if the memory is right in front of her, something that she saw or heard. It could be a book she read, a game of D&D, or exactly how a person looked. This gives her a permanent +1 to intelligence, but a d20 -1 to speed and agility regardless of buffs when she uses the ability."]
     ],
     "timeline": [
-        {"year": "1971", "class": "Health", "description": "+5 HP, Eun-byul was born."},
-        {"year": "1976", "class": "Event", "description": "Eun started playing Dungeons & Dragons, a year after it came out."},
-        {"year": "1978", "class": "ItemFound", "description": "Eun acquired a Hunting Knife."},
-        {"year": "1978", "class": "Health", "description": "-1 HP, Eun-byul ate a fish that was highly concentrated with Mercury."},
-        {"year": "1981", "class": "Health", "description": "Eun-byul's doctor reports that she's had chronic exposure to mercury."},
-        {"year": "1984", "class": "ItemFound", "description": "Her father gave Eun a Sony Walkman WM-D6C on her birthday."},
-        {"year": "1984", "class": "Event", "description": "Eun bullied a random loser, slashing their tires to prove a point about walk speeds in RPGs."},
-        {"year": "1988", "class": "Event", "description": "Eun acquired her learners permit."},
-        {"year": "1988", "class": "Event", "description": "Eun played a TRPG campaign."},
-        {"year": "1989", "class": "Event", "description": "Eun acquired a drivers license."},
-        {"year": "1989", "class": "Health", "description": "Eun-byul's 17th birthday."},
-        {"year": "1989", "class": "ItemLost", "description": "Eun left her Hunting Knife in her room."}
-    ],    
+        {
+            "section": "Early Life",
+            "events": [
+                {"year": "1971", "class": "Health", "description": "+5 HP, Eun-byul was born."},
+                {"year": "1976", "class": "Event", "description": "Eun started playing Dungeons & Dragons, a year after it came out."}
+            ]
+        },
+        {
+            "section": "Childhood",
+            "events": [
+                {"year": "1978", "class": "ItemFound", "description": "Eun acquired a Hunting Knife."},
+                {"year": "1978", "class": "Health", "description": "-1 HP, Eun-byul ate a fish that was highly concentrated with Mercury."},
+                {"year": "1981", "class": "Health", "description": "Eun-byul's doctor reports that she's had chronic exposure to mercury."}
+            ]
+        },
+        {
+            "section": "Teenage Years",
+            "events": [
+                {"year": "1984", "class": "ItemFound", "description": "Her father gave Eun a Sony Walkman WM-D6C on her birthday."},
+                {"year": "1984", "class": "Event", "description": "Eun bullied a random loser, slashing their tires to prove a point about walk speeds in RPGs."},
+                {"year": "1988", "class": "Event", "description": "Eun acquired her learners permit."},
+                {"year": "1988", "class": "Event", "description": "Eun played a TRPG campaign."}
+            ]
+        },
+        {
+            "section": "Before arriving at the lake.",
+            "events": [
+                {"year": "1989", "class": "Event", "description": "Eun acquired a drivers license."},
+                {"year": "1989", "class": "Health", "description": "Eun-byul's 17th birthday."},
+                {"year": "1989", "class": "ItemLost", "description": "Eun left her Hunting Knife in her room."}
+            ]
+        }
+    ],
     "inventoryLimiter": 10,
     "inventoryCapacity": 24,
     "inventory": {

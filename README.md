@@ -13,3 +13,4 @@
 + Requirements
 + Added Timeline and event colors.
 + Pushed item descriptions closer to top view.
++ Added Timeline sections.
