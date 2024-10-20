@@ -24,14 +24,16 @@ const config = {
             profile: '.profile-details',
             tactics: '.tactics',
             discoverys: '.discoverys',
-            timeline: '.timeline', // Added timeline section
+            timeline: '.timeline',
+            geometry: '.geometry'
         },
         navItems: {
             inventory: '#nav-inventory',
             profile: '#nav-profile',
             tactics: '#nav-tactics',
             discoverys: '#nav-discoverys',
-            timeline: '#nav-timeline', // Added timeline nav item
+            timeline: '#nav-timeline',
+            geometry: '#nav-map'
         }
     },
     defaultSection: 'inventory',

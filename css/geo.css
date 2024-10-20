@@ -1,0 +1,92 @@
+.geometry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#geometryCanvas {
+    cursor: grab;
+}
+
+#geometryCanvas:active {
+    cursor: grabbing;
+}
+
+.geometry canvas {
+    border: 2px solid #00f6ff;
+    display: block;
+    margin: 0 auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.geometry button {
+    background-color: #1a0026;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #00f6ff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+}
+
+.geometry button svg {
+    fill: #00f6ff;
+    stroke: #00f6ff;
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3s, transform 0.3s;
+}
+
+/* Line Button: Horizontal and Vertical Rotation */
+#lineButton svg {
+    stroke: #ff0000; /* Red for line */
+}
+
+#lineButton.vertical svg {
+    transform: rotate(90deg); /* Rotate to vertical */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Circle Button: Green Color */
+#circleButton svg {
+    fill: #00ff00; /* Green for circle */
+    stroke: #00ff00;
+}
+
+/* Hover Effects */
+.geometry button:hover {
+    background-color: #00f6ff;
+    color: #1a0026;
+    transform: scale(1.1);
+}
+
+.geometry button:hover svg {
+    fill: #1a0026;
+}
+
+.geometry button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #00d4ff;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

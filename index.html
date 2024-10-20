@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/prog.css">
     <link rel="stylesheet" href="css/updates.css">
     <link rel="stylesheet" href="css/time.css">
+    <link rel="stylesheet" href="css/geo.css">
 </head>
 <body>
     <div class="card">
@@ -53,13 +54,47 @@
         <div class="discoverys" style="display: none;"></div>
         <div class="profile-details" style="display: none;"></div>
         <div class="timeline" style="display: none;"></div>
-    </div>
+        <div class="geometry">
+            <canvas id="geometryCanvas" width="280" height="280"></canvas>
+            
+            <div class="button-container" style="display: flex; justify-content: center; margin-top: 10px;">
+                <button id="squareButton" aria-label="Square">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="none">
+                        <rect x="4" y="4" width="16" height="16"></rect>
+                    </svg>
+                    <span class="visually-hidden">Square</span>
+                </button>
+        
+                <button id="lineButton" aria-label="Line">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                    </svg>
+                    <span class="visually-hidden">Line</span>
+                </button>
+        
+                <button id="circleButton" aria-label="Circle">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="none">
+                        <circle cx="12" cy="12" r="8"></circle>
+                    </svg>
+                    <span class="visually-hidden">Circle</span>
+                </button>
+            </div>
+        
+            <div class="recordgeo" style="display: none;">
+                <!-- Future section for recording geometry actions -->
+            </div>
+        </div>
+        
+        
+        
+   </div>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main/config.js"></script>  
     <script src="js/main/init.js"></script>    
     <script src="js/nav/logbook.js"></script>    
+    <script src="js/nav/geometry.js"></script>    
     <script src="js/nav/profile.js"></script>    
     <script src="js/nav/inv.js"></script>    
     <script src="js/int/status.js"></script>    

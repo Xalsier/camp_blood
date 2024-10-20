@@ -10,6 +10,8 @@ function initializeNavHandlers(data) {
                 populateProfileSection(data.profile);
             } else if (section === 'timeline') {
                 populateTimelineSection(data.timeline);
+            } else if (section === 'geometry') {
+                populateGeometrySection(); // Initialize geometry section
             }
             showSection(section);
         });
