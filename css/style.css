@@ -24,7 +24,6 @@ body {
     height: 20em;
     overflow-x: none;
     overflow-y: scroll;
-    border: 1px solid #00f6ff; /* Neon blue border */
 }
 
 .profile-info-container {
@@ -183,7 +182,6 @@ body {
     width: 18.75em; /* 300px */
     height: auto;
     background-color: #1a0026; /* Dark purple background */
-    border: 1px solid #00f6ff; /* Neon blue border */
     border-radius: 10px;
     color: #e0e0ff; /* Light neon blue text */
 }

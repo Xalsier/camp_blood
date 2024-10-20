@@ -5,9 +5,14 @@
 
 ## Planned Features
 
-+ Mobile Optimization
-+ Progress Bars for Internalized Thoughts
+- Mobile Optimization
+
+## Added Features
+
++ Progress Bar
++ Requirements
 
 ## Connected Repository
 
 https://github.com/Xalsier/blood_Inv
+
