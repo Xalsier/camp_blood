@@ -7,6 +7,10 @@
 
 - Mobile Optimization
 
+## Ideas
+
+- Map Builder
+
 ## Added Features
 
 + Progress Bar

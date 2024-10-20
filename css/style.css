@@ -83,26 +83,6 @@ body {
     background-color: rgba(63, 46, 72, 0.612);
 }
 
-.navigation {
-    display: flex;
-    overflow-x: scroll;
-    margin-bottom: 0.625em; /* 10px */
-    border-bottom: 1px solid #00f6ff; /* Neon blue border */
-}
-
-.nav-item {
-    margin-right: 1.25em; /* 20px */
-    padding-bottom: 0.3125em; /* 5px */
-    cursor: pointer;
-    color: #777;
-}
-
-.nav-item.active {
-    color: #00f6ff; /* Neon blue active */
-    border-bottom: 2px solid #00f6ff; /* Neon blue */
-    font-weight: bold;
-}
-
 .inventory {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -176,7 +156,6 @@ body {
 }
 
 .description-card {
-    margin-top: 0.625em; /* 10px */
     width: 340px; /* 300px */
     height: auto;
     background-color: #1a0026; /* Dark purple background */

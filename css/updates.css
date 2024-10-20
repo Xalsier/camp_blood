@@ -4,7 +4,6 @@
     /* ... existing styles ... */
     background-color: #1a0026;
     padding: 1.25em;
-    margin-top: 1.25em;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
     display: flex;
@@ -17,7 +16,6 @@
 /* Style for the description card */
 .description-card {
     position: absolute;
-    top: 150px; /* Adjust as needed to place below the navigation */
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -27,7 +25,6 @@
     z-index: 1; /* Ensures it appears above the inventory slots */
     padding: 1em;
     width: 100%;
-    height: 100vh;
     box-sizing: border-box;
 }
 

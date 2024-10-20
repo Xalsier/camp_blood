@@ -1,25 +1,28 @@
 /* Media Query for screens smaller than 600px */
 @media (max-width: 600px) {
-    .card, .description-card {
+    .card{
         transform: scale(0.9); /* Scale down slightly */
     }
 }
 
 /* Media Query for screens smaller than 400px */
 @media (max-width: 400px) {
-    .card, .description-card {
+    .card {
         transform: scale(0.8); /* Scale down more on smaller screens */
         width: 100%;
     }
 }
 
-/* Media Query for screens smaller than 300px */
+/* Media Query for screens smaller than 340px */
 @media (max-width: 340px) {
-    .card, .description-card {
-        transform: scale(0.75); /* Even smaller scaling for tiny screens */
-        width: 100%;
-        padding-left: 1em; /* Reduce padding */
-        padding-right: 1em; /* Reduce padding */
+    .card {
+        transform: scale(0.75); /* Scale down */
+        width: 100%; 
+        padding: 0 1em; /* Reduce padding on both sides */
+    }
+
+    .description-card {
+        width: 100%; 
     }
 
     .name {
@@ -53,17 +56,17 @@
 /* Media Query for screens smaller than 300px */
 @media (max-width: 300px) {
     .card, .description-card {
-        width: 90%; /* Scale down the card and description card */
-        padding: 1em; /* Reduce padding */
+        width: 100%; /* Ensure width is constrained to 100% */
+        padding: 0.5em 1em; /* Adjust padding for smaller screens */
     }
 
     .name {
-        font-size: 1.2em; /* Scale down the name text */
+        font-size: 1em; /* Scale down the name text */
     }
 
     .profile-square {
-        width: 4em; /* Scale down profile square */
-        height: 4em;
+        width: 3.5em; /* Scale down profile square */
+        height: 3.5em;
     }
 
     .inventory {
@@ -72,7 +75,7 @@
     }
 
     .item-slot {
-        grid-auto-rows: 4em; /* Scale down the inventory slots */
+        grid-auto-rows: 3.5em; /* Further scale down the inventory slots */
     }
 
     .item-slot.large {

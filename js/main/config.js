@@ -1,5 +1,5 @@
-const eunUrl = 'eun.json';
-const debugUrl = 'debug.json';
+const eunUrl = 'lib/eun.json';
+const debugUrl = 'lib/debug.json';
 let currentDataUrl = eunUrl; // Default to Eun's data
 const config = {
     totalCapacity: 24,

@@ -1,0 +1,14 @@
+// Modules
+
+// inv.js = populateSection, createItemSlot, handleCollection
+// inv does the work of Inventory, Tactics, and Discoverys.
+// It's pretty lazy I know.
+
+// profile.js = populateProfileSection
+// This creates the profile section..
+
+// logbook.js = populateTimelineSection
+// This creates the timeline section
+
+// config.js = Has all the json data. Use debug.json for testing
+// It's low weight and less complicated than eun.json (My character file)
