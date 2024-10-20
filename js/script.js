@@ -44,9 +44,6 @@ function loadData(dataUrl) {
             $slot.on('click', function(event) {
                 event.stopPropagation();
                 let description = item.description || '';
-                if (item.lost) {
-                    description += "<br><br><em>This action, item, or thought cannot be used as it is missing 1 or more requirements.</em>";
-                }
                 let progressBarHtml = '';
                 if (item.progress !== undefined) {
                     progressBarHtml = `
@@ -73,9 +70,9 @@ function loadData(dataUrl) {
                 }
                 $(config.selectors.descriptionCard).html(`
                     <p><strong>${itemName}</strong></p>
-                    ${progressBarHtml}
                     ${requirementsHtml}
                     <p>${description}</p>
+                    ${progressBarHtml}
                 `).show();
             });
             return $slot;
@@ -86,7 +83,7 @@ function loadData(dataUrl) {
             $slot.on('click', function(event) {
                 event.stopPropagation();
                 isOpen = !isOpen;
-                $slot.html(`<span>${item.icon ? item.icon + ' ' : ''}${isOpen ? "Close" : "Open"} ${item.name}</span>`);
+                $slot.html(`<span>${item.icon ? item.icon + ' ' : ''} ${item.name}</span>`);
                 if (isOpen) {
                     item.collectionItems.forEach(function(subItem) {
                         let $subSlot = createItemSlot(subItem, true);

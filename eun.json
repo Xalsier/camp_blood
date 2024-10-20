@@ -29,13 +29,13 @@
                 "name": "Journal",
                 "icon": "ᝰ", 
                 "size": 1,
-                "description": "Journal. Discoveries, ideas, and drawings are logged here. 1 small used pencil in her pocket, and 1 sharpened pencil in her ear."
+                "description": "Journal. Discoveries, ideas, and drawings are logged here. Located in her jacket."
             },
             {
                 "name": "Purse",
                 "icon": "⛁", 
                 "size": 2,
-                "description": "A fashionable purse that holds several smaller items.",
+                "description": "A zip up leather purse that holds several smaller items. Has a small plush bunny keychain.",
                 "isCollection": true,   
                 "collectionItems": [
                     {
@@ -47,6 +47,26 @@
                         "name": "Cash",
                         "size": 1,
                         "description": "Folded cash, worth about $50."
+                    },
+                    {
+                        "name": "Drivers License",
+                        "size": 1,
+                        "progress": 100,
+                        "req": [
+                            ["Drivers Test Memory", true],
+                            ["Fake Licenses Memory", false]
+                        ],
+                        "description": "A small paper based New Jersey Drivers license card."
+                    },
+                    {
+                        "name": "Pencil",
+                        "size": 1,
+                        "description": "A sharpened pencil, used for writing."
+                    },
+                    {
+                        "name": "Bunny Keychain",
+                        "size": 1,
+                        "description": "Attached to the zipper of the purse. Depicts a cute bunny meditating with closed eyes with a carrot on a stick above it's head."
                     },
                     {
                         "name": "Hairspray",
@@ -66,58 +86,116 @@
     "tactics": {
         "items": [
             {
-                "name": "Slash Tires",
-                "lost": true,
-                "description": "Eun-byul can slash a car's tires to prevent it from driving. Previous uses include 1 year ago against some poor soul in high school.<br><br>Requires knife"
+                "name": "Pop Tires",
+                "lost": false,
+                "progress": 100,
+                "req": [
+                    ["Sharp knife", false],
+                    ["Pencil", true],
+                    ["Random Loser Memory", true]
+                ],
+                "description": "Eun-byul can slash a car's tires to prevent it from driving."
             },
             {
                 "name": "Finger Whistle",
-                "description": "Create a loud 120db finger whistle to attract attention.<br><br>Requires hands"
+                "progress": 100,
+                "req": [
+                    ["Hands", true],
+                    ["The Walk Home", true]
+                ],
+                "description": "Create a loud 120db finger whistle to attract attention."
             },
             {
                 "name": "Record Audio",
-                "description": "Requires Sony Walkman, Microphone, C90 Tape 1 or 2. Record a sample of audio and save it to a track."
+                "progress": 100,
+                "req": [
+                    ["Sony Walkman", true],
+                    ["Corded Microphone", true],
+                    ["C90 Tape #1 or #2", true]
+                ],
+                "description": "Record a sample of audio and save it to a track."
             },
             {
                 "name": "Play Music",
-                "description": "Requires Sony Walkman, Headphones. C90 Tape 2. Listen to your playlist and ignore sounds from your environment."
+                "description": "Listen to your playlist and ignore sounds from your environment.",
+                "progress": 100,
+                "req": [
+                    ["Sony Walkman", true],
+                    ["Corded Headphones", true],
+                    ["C90 Tape #2", true]
+                ]
             },
             {
                 "name": "Eye Poke",
                 "lost": true,
-                "description": "Requires Sharp object (Pencil) & 'Balloons' thought which can be acquired by playing 'Pop The Balloons' at the amusement park.<br><br>Throw a sharp object at an undead demons eye."
+                "progress": 10,
+                "req": [
+                    ["Sharp poking tool", true],
+                    ["Pop the Balloons! Memory", false]
+                ],
+                "description": "Throw a sharp object at an undead demons eye."
             }
         ]
     },
     "discoverys": {
         "items": [
             {
-                "name": "Father",
-                "description": "Your father's name is Richard Selous.<br><br>He is a local journalist in Blackwood. He is also an Anglican Christian.<br><br>He used to be an on field journalist for the Vietnam War.<br><br>His ancestor is Frederick Selous."
-            },
+                "name": "Family",
+                "description": "Your family.",
+                "isCollection": true,
+                "size": 4,
+                "collectionItems": [
+                        {
+                            "name": "Richard Selous",
+                            "relation": "Father",
+                            "description": "Your father is a local journalist in Blackwood. He is an Anglican Christian and was a field journalist during the Vietnam War. His ancestor is Frederick Selous."
+                        },
+                        {
+                            "name": "Mother",
+                            "relation": "Mother",
+                            "description": "Your mother follows some Seon Buddhist teachings (Zen Buddhism). She is from South Korea and has always been protective over you."
+                        },
+                        {
+                            "name": "Michael Selous",
+                            "relation": "Brother",
+                            "description": "Your older brother, who enlisted in the Navy. He writes to you sometimes."
+                        },
+                        {
+                            "name": "Frederick Selous",
+                            "relation": "Ancestor",
+                            "description": "A legendary British explorer, big game hunter, and conservationist who lived in the late 19th and early 20th century. Your father often talks about him."
+                        }
+                    ]
+            }, 
             {
                 "name": "Mercury",
+                "progress": 5,
+                "req": [
+                    ["Relic Paint Thought", false],
+                    ["Bunny Thought", false]
+                ],
                 "description": "The tremors in your left hand are caused by chronic exposure to mercury. This was verified by a doctors appointment, so you know this is true.<br><br>The only exposure you can think of was the incident where you ate a fish from Onondaga Lake in New York.<br><br>Your father and brother joke that your crazy ideas come from the mercury. This only makes you upset."
             },
             {
-                "name": "Mother",
-                "description": "Your mother shares some of the school of thought of Seon Buddhists. Ie Zen Buddhism, a branch of Mahayana Buddhism.<br><br>She is from South Korea."
+                "name": "Random Loser",
+                "description": "A kid you bullied 5 years ago. You slashed his parents tires for an entire month to see what he'd do to get to school.<br><br>It took him an hour and half to make it to school on average. You used this information to calculate walk times in d&d."
             },
             {
-                "name": "Mike",
-                "description": "Your older brother, Michael Selous, who enlisted in the navy. He sometimes writes to you."
+                "name": "Walk Home",
+                "size": 1,
+                "progress": 100,
+                "description": "Your father taught you how to whistle loudly with your hands, in case you ever needed to walk home by yourself. After some practice, you managed to perfect it to 120 decibals.<br><br>You had to use this ability frequently. Sometimes for hide and seek, other times when you got lost. And of course, on the walk home."
             },
             {
                 "name": "Pop the Balloons!",
                 "size": 2,
                 "lost": true,
+                "progress": 10,
+                "req": [
+                    ["Visit a 'Pop The Balloons! stand.'", false]
+                ],
                 "description": "Thought has not been internalized."
-            },
-            {
-                "name": "Random Loser",
-                "size": 2,
-                "description": "A kid you bullied 5 years ago. You slashed his parents tires for an entire month to see what he'd do to get to school.<br><br>It took him an hour and half to make it to school on average. You used this information to calculate walk times in d&d."
-            }
+            } 
         ]
     }
 }

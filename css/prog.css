@@ -8,7 +8,6 @@
     border-radius: 10px;
     overflow: hidden;
     height: 20px;
-    border: 1px solid #00f6ff; /* Neon blue border */
 }
 
 .progress-bar-fill {
@@ -35,7 +34,6 @@
     border-radius: 50%;
     display: inline-block;
     margin-right: 10px;
-    border: 1px solid #00f6ff; /* Neon blue border */
 }
 
 .requirement-circle.active {
