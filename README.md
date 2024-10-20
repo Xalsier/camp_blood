@@ -7,10 +7,6 @@
 
 - Mobile Optimization
 
-## Ideas
-
-- Map Builder
-
 ## Added Features
 
 + Progress Bar
@@ -18,3 +14,5 @@
 + Added Timeline and event colors.
 + Pushed item descriptions closer to top view.
 + Added Timeline sections.
++ Added Geometry Map Builder
++ Added labels for Map.
