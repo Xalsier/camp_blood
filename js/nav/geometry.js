@@ -32,7 +32,7 @@ function drawAllShapes(ctx) {
 
 function drawOptimizedSquare(ctx, x, y, size) {
     ctx.beginPath();
-    ctx.strokeStyle = '#00f6ff';
+    ctx.strokeStyle = 'white';
     ctx.lineWidth = 2;
 
     const left = x;
