@@ -9,8 +9,8 @@ function initializeNavHandlers(data) {
             if (section === 'profile') {
                 populateProfileSection(data.profile);
             } else if (section === 'timeline') {
-                populateWitnessSelect(timelineData);
-                populateTimeline(0, timelineData);
+                populateWitnessSelect();
+                populateTimeline(0);
             } else if (section === 'geometry') {
                 populateGeometrySection(); // Initialize geometry section
             }
@@ -18,6 +18,7 @@ function initializeNavHandlers(data) {
         });
     });
 }
+
 function showSection(section) {
     $.each(config.selectors.sections, function(_, selector) {
         $(selector).hide();

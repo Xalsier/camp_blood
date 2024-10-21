@@ -37,4 +37,5 @@ const config = {
         }
     },
     defaultSection: 'inventory',
+    witnessesUrl: 'lib/directory.json', // Add this line
 };
