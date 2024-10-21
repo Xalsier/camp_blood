@@ -30,7 +30,7 @@ function populateTimeline(witnessIndex) {
         $timelineContent.empty();
 
         // Add header
-        let $header = $('<div class="timeline-header"></div>').text(`Memories of ${witnessData.name}`);
+        let $header = $('<div class="timeline-header"></div>').text(`Dossier of ${witnessData.name}`);
         $timelineContent.append($header);
 
         // Iterate through sections
