@@ -1,0 +1,34 @@
+[
+    {
+        "section": "Early Life",
+        "events": [
+            {"year": "1971", "class": "Health", "description": "+5 HP, Eun-byul was born.", "aware": true}
+        ]
+    },
+    {
+        "section": "Childhood",
+        "events": [
+            {"year": "1978", "class": "ItemFound", "description": "Eun acquired a Hunting Knife.", "aware": true},
+            {"year": "1978", "class": "Health", "description": "-1 HP, Eun-byul ate a fish that was highly concentrated with Mercury.", "aware": true},
+            {"year": "1979", "class": "Event", "description": "Eun started playing Dungeons & Dragons, 4 years after it came out.", "aware": true},
+            {"year": "1981", "class": "Health", "description": "Eun-byul's doctor reports that she's had chronic exposure to mercury.", "aware": true}
+        ]
+    },
+    {
+        "section": "Middle-High School Years",
+        "events": [
+            {"year": "1984", "class": "ItemFound", "description": "Her father gave Eun a Sony Walkman WM-D6C on her birthday.", "aware": true},
+            {"year": "1984", "class": "Event", "description": "Eun bullied a random loser, slashing their tires to prove a point about walk speeds in RPGs.", "aware": true},
+            {"year": "1988", "class": "Event", "description": "Eun acquired her learner's permit.", "aware": true},
+            {"year": "1988", "class": "Event", "description": "Eun played a TRPG campaign.", "aware": true}
+        ]
+    },
+    {
+        "section": "Before arriving at the lake",
+        "events": [
+            {"year": "1989", "class": "Event", "description": "Eun acquired a driver's license.", "aware": true},
+            {"year": "1989", "class": "Health", "description": "Eun-byul's 17th birthday.", "aware": true},
+            {"year": "1989", "class": "ItemLost", "description": "Eun left her Hunting Knife in her room.", "aware": true}
+        ]
+    }
+]

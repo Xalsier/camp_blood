@@ -1,4 +1,4 @@
 [
-    {"name": "Eun-byul Selous", "file": "lib/wit/wit-es.json"},
-    {"name": "Mike Selous", "file": "lib/wit/wit-ms.json"}
+    {"name": "Eun-byul Selous", "json": "lib/wit/es.json", "txt": null},
+    {"name": "Mike Selous", "json": null, "txt": "lib/fall/ms.txt"}
 ]
