@@ -42,6 +42,8 @@ body::-webkit-scrollbar-thumb:hover {
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: center; /* Center the items */
     margin-bottom: 1em; /* Margin below navigation */
+    padding-bottom: 10px; /* Adds space above the border */
+    border-bottom: 2px solid #00f6ff; /* Neon blue */
 }
 
 .nav-item {
@@ -53,6 +55,5 @@ body::-webkit-scrollbar-thumb:hover {
 
 .nav-item.active {
     color: #00f6ff; /* Neon blue active */
-    border-bottom: 2px solid #00f6ff; /* Neon blue */
     font-weight: bold;
 }

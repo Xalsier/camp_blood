@@ -1,7 +1,6 @@
 /* Add position: relative to .card to position description card absolutely within it */
 .card {
     position: relative;
-    /* ... existing styles ... */
     background-color: #1a0026;
     padding: 1.25em;
     border-radius: 10px;

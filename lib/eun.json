@@ -12,8 +12,12 @@
         ["Personality", "Curious, Intelligent, No moral restraint, A little edgy, Not afraid to fight or argue, Creative (Writer/Artist), Sometimes unpredictable"],
         ["Background", "LIRP"],
         [],
-        ["Perk", "Eidetic Memory"],
-        ["Description", "Eun-byul can recall with perfect clarity, as if the memory is right in front of her, something that she saw or heard. It could be a book she read, a game of D&D, or exactly how a person looked. This gives her a permanent +1 to intelligence, but a d20 -1 to speed and agility regardless of buffs when she uses the ability."]
+        ["Perk", "Internalize"],
+        ["Description", "Eun-byul can recall with perfect clarity, as if the memory is right in front of her, something that she saw or heard. It could be a book she read, a game of D&D, or exactly how a person looked."],
+        [],
+        ["Corruption Perk", "Voices of the Past"],
+        ["Description", "When Eun-byul is corrupted, or undead, she can recall information & memorys in the form of advice from different personalities in her head. Each representing a manifestation of her memorys."]
+
     ],
     "timeline": [
         {

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Existing head content -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory System</title>
+    <title>Eun-byul Selous</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/opt.css">
     <link rel="stylesheet" href="css/scroll.css">
@@ -13,6 +12,7 @@
     <link rel="stylesheet" href="css/updates.css">
     <link rel="stylesheet" href="css/time.css">
     <link rel="stylesheet" href="css/geo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="card">
@@ -30,7 +30,6 @@
                 </div>
             </div>
         </div>
-    
         <div class="navigation">
             <span class="nav-item" id="nav-profile">Profile</span>
             <span class="nav-item" id="nav-discoverys">Internalize</span>
@@ -39,7 +38,6 @@
             <span class="nav-item" id="nav-timeline">Logbook</span>
             <span class="nav-item" id="nav-map">Geometry</span>
         </div>
-
         <div id="description-card" class="description-card" style="display: none;">
             <div class="description-header">
                 <span id="description-title"></span>
@@ -47,8 +45,6 @@
             </div>
             <div id="description-content"></div>
         </div>
-    
-        <!-- Inventory and other sections -->
         <div class="inventory"></div>
         <div class="tactics" style="display: none;"></div>
         <div class="discoverys" style="display: none;"></div>
@@ -56,7 +52,6 @@
         <div class="timeline" style="display: none;"></div>
         <div class="geometry">
             <canvas id="geometryCanvas" width="280" height="280"></canvas>
-            
             <div class="button-container" style="display: flex; justify-content: center; margin-top: 10px;">
                 <button id="squareButton" aria-label="Square">
                     <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="none">
@@ -64,14 +59,12 @@
                     </svg>
                     <span class="visually-hidden">Square</span>
                 </button>
-        
                 <button id="lineButton" aria-label="Line">
                     <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="4" y1="12" x2="20" y2="12"></line>
                     </svg>
                     <span class="visually-hidden">Line</span>
                 </button>
-        
                 <button id="circleButton" aria-label="Circle">
                     <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="none">
                         <circle cx="12" cy="12" r="8"></circle>
@@ -79,25 +72,18 @@
                     <span class="visually-hidden">Circle</span>
                 </button>
             </div>
-        
-            <div class="recordgeo" style="display: none;">
-                <!-- Future section for recording geometry actions -->
-            </div>
+            <div class="recordgeo" style="display: none;"></div>
         </div>
-        
-        
-        
    </div>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/main/config.js"></script>  
-    <script src="js/main/init.js"></script>    
-    <script src="js/nav/logbook.js"></script>    
-    <script src="js/nav/geometry.js"></script>    
-    <script src="js/nav/profile.js"></script>    
-    <script src="js/nav/inv.js"></script>    
-    <script src="js/int/status.js"></script>    
-    <script src="js/int/navi.js"></script>    
+   <footer>
+        <script src="js/main/config.js"></script>  
+        <script src="js/main/init.js"></script>    
+        <script src="js/nav/logbook.js"></script>    
+        <script src="js/nav/geometry.js"></script>    
+        <script src="js/nav/profile.js"></script>    
+        <script src="js/nav/inv.js"></script>    
+        <script src="js/int/status.js"></script>    
+        <script src="js/int/navi.js"></script>    
+   </footer>
 </body>
 </html>
