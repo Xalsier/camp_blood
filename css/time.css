@@ -1,3 +1,64 @@
+.timeline-nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.timeline-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.timeline-buttons button {
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #555;
+    color: #e0e0ff;
+    border: none;
+    border-radius: 5px;
+}
+
+.timeline-buttons button.active {
+    background-color: #00f6ff;
+    color: #000;
+}
+
+.timeline-buttons button:disabled {
+    background-color: #333;
+    color: #777;
+    cursor: not-allowed;
+}
+
+.timeline-select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.timeline-select label {
+    font-weight: bold;
+    color: #e0e0ff;
+}
+
+.timeline-select select {
+    padding: 5px;
+    font-size: 1em;
+    background-color: #222;
+    color: #e0e0ff;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.timeline-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00f6ff;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
 .timeline-section {
     font-size: 1.2em;
     font-weight: bold;
@@ -31,7 +92,6 @@
 .timeline-circle.Health {
     background-color: #77DD77; /* Pastel Green */
 }
-
 
 .timeline-entry {
     display: flex;

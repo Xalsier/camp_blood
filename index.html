@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/updates.css">
     <link rel="stylesheet" href="css/time.css">
     <link rel="stylesheet" href="css/geo.css">
+    <link rel="icon" type="image/svg+xml" href="svg/ekg.svg">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
@@ -49,7 +50,21 @@
         <div class="tactics" style="display: none;"></div>
         <div class="discoverys" style="display: none;"></div>
         <div class="profile-details" style="display: none;"></div>
-        <div class="timeline" style="display: none;"></div>
+        <div class="timeline" style="display: none;">
+            <div class="timeline-nav">
+                <div class="timeline-buttons">
+                    <button id="timeline-code-btn" class="active">Code</button>
+                    <button id="timeline-graph-btn" disabled>Graph</button>
+                </div>
+                <div class="timeline-select">
+                    <label for="witness-select">Witness:</label>
+                    <select id="witness-select"></select>
+                </div>
+            </div>
+            <div id="timeline-content">
+                <!-- Timeline entries will be populated here -->
+            </div>
+        </div>        
         <div class="geometry">
             <canvas id="geometryCanvas" width="280" height="280"></canvas>
             <div class="button-container" style="display: flex; justify-content: center; margin-top: 10px;">

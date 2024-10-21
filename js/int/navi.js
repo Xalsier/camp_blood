@@ -9,7 +9,8 @@ function initializeNavHandlers(data) {
             if (section === 'profile') {
                 populateProfileSection(data.profile);
             } else if (section === 'timeline') {
-                populateTimelineSection(data.timeline);
+                populateWitnessSelect(timelineData);
+                populateTimeline(0, timelineData);
             } else if (section === 'geometry') {
                 populateGeometrySection(); // Initialize geometry section
             }

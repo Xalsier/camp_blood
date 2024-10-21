@@ -61,16 +61,24 @@
                 "name": "Mike Selous",
                 "timeline": [
                     {
+                        "section": "Early Life",
+                        "events": [
+                            {"year": "1965", "class": "Event", "description": "Mike was born.", "aware": true},
+                            {"year": "1970", "class": "Event", "description": "Mike started school.", "aware": true}
+                        ]
+                    },
+                    {
                         "section": "Family Events",
                         "events": [
-                            {"year": "1971", "class": "Event", "description": "Mike's sister Eun-byul was born.", "aware": true}
+                            {"year": "1971", "class": "Event", "description": "Mike's sister Eun-byul was born.", "aware": true},
+                            {"year": "1975", "class": "Event", "description": "Family moved to a new house.", "aware": false}
                         ]
                     },
                     {
                         "section": "Military Service",
                         "events": [
                             {"year": "1983", "class": "Event", "description": "Mike enlisted in the Navy.", "aware": true},
-                            {"year": "1984", "class": "Event", "description": "Some fucking event that happened", "aware": false}
+                            {"year": "1984", "class": "Event", "description": "Mike was deployed overseas.", "aware": true}
                         ]
                     }
                 ]
