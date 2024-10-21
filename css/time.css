@@ -62,7 +62,7 @@
 .timeline-section {
     font-size: 1.2em;
     font-weight: bold;
-    color: #00f6ff; /* Neon blue */
+    color: #9dfcff; /* Neon blue */
     text-transform: uppercase;
 }
 
@@ -99,13 +99,15 @@
     justify-content: flex-start;
     margin-bottom: 1em;
     position: relative;
+    padding: 10px;
+    background-color: rgba(63, 46, 72, 0.612);
+    border-radius: 10px;
 }
 
 .timeline-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    margin-left: 10px; /* Adjust spacing between year and circle */
     margin-right: 10px;
     flex-shrink: 0; /* Prevent shrinking of the circle */
 }
